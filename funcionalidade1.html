@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style_1.css">
+    <title>IdWall</title>
+</head>
+
+<body>
+
+    <!-- menu de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./img/idwall logo.png" style="width: 150px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#idwall"
+                style="cursor:pointer" aria-controls="navbarSupportedContent" aria-expanded="true"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="idwall">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Protocolos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Atributos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Fontes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./funcionalidade2.html">Monitor</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Documentos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Matrizes</a></li>
+                            <li><a class="dropdown-item" href="#">Organizações</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Regras</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Sair</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+
+    <section class="cliente">
+        <h1 class="cliente-title">Clientes</h1>
+        <a href="" class="cliente-link">Status do Cliente</a>
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="option">
+            <option selected>Pesquisar cliente por:</option>
+            <option value="1">ID</option>
+            <option value="2">E-MAIL</option>
+            <option value="3">NOME</option>
+        </select>
+
+    </section>
+
+    <form>
+        <div class="input-adicionar">
+            <label for="" id="add" class="form-label">Adicionar Cliente</label>
+            <input type="text" class="form-control" id="input-cliente" placeholder="Digite o ID do Cliente">
+        </div>
+        <button type="adicionar" id="button" class="btn btn-dark">Adicionar</button>
+
+        <div class="input-remove">
+            <label for="" id="remove" class="form-label">Remover Cliente</label>
+            <input type="text" class="form-control" id="input-cliente" placeholder="Digite o ID do Cliente">
+        </div>
+        <button type="remove" id="button" class="btn btn-dark">Remover</button>
+
+    </form>
+
+    <table class="table table-dark table-striped" id="tabela-cliente">
+        <thead>
+            <tr class="">
+                <th scope="col">ID</th>
+                <th scope="col">Nome-Cliente</th>
+                <th scope="col">Protocolos</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Acesso</th>
+                <th scope="col">BackOffice</th>
+                <th scope="col">ID-Network</th>
+                <th scope="col">Conectar</th>
+                <th scope="col">Desconectar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">123</th>
+                <td>Mark</td>
+                <td>1000</td>
+                <td>mark@gmail</td>
+                <td>Sim</td>
+                <td>Não</td>
+                <td>Não</td>
+                <td><button type="" id="" class="btn btn-success">Logar</button></td>
+                <td><button type="" id="" class="btn btn-danger">Deslogar</button></td>
+            </tr>
+            <tr>
+                <th scope="row">234</th>
+                <td>Jacob</td>
+                <td>8356</td>
+                <td>jacob@hotmail</td>
+                <td>Não</td>
+                <td>Não</td>
+                <td>Sim</td>
+                <td><button type="" id="" class="btn btn-success">Logar</button></td>
+                <td><button type="" id="" class="btn btn-danger">Deslogar</button></td>
+            </tr>
+            <tr>
+                <th scope="row">345</th>
+                <td>Larry</td>
+                <td>3452</td>
+                <td>larry@outlook</td>
+                <td>Sim</td>
+                <td>Sim</td>
+                <td>Não</td>
+                <td><button type="" id="" class="btn btn-success">Logar</button></td>
+                <td><button type="" id="" class="btn btn-danger">Deslogar</button></td>
+
+            </tr>
+            <tr>
+                <th scope="row">456</th>
+                <td>Otto</td>
+                <td>1256</td>
+                <td>otto@gmail</td>
+                <td>Não</td>
+                <td>Sim</td>
+                <td>Sim</td>
+                <td><button type="" id="" class="btn btn-success">Logar</button></td>
+                <td><button type="" id="" class="btn btn-danger">Deslogar</button></td>
+
+            </tr>
+
+        </tbody>
+    </table>
+
+
+
+</body>
+
+</html>

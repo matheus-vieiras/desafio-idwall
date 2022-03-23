@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  background: linear-gradient(45deg, #8e2de2, #4a00e0);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.btn-color-wall{
+  background: linear-gradient(45deg, #8e2de2, #4a00e0)
+}
+.fsize-40{
+  font-size: 40pt;
+}
+.cliente {
+  width: 100%;
+  height: 30vh;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  margin-top: 40px;
+}
+.cliente-title {
+  margin-bottom: 2rem;
+  font-size: 9vmin;
+  display: flex;
+}
+.cliente-link {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 12px 30px;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 70px;
+  font-size: 2, 5vmin;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.cliente-link:hover {
+  background-color: transparent;
+}
+
+.font-colot-idWall
+{
+  color: #fff;
+}
+  #option {
+  border-radius: 90px;
+  font-weight: 900;
+  text-align: center;
+  max-width: 60%;
+  font-size: 2, 5vmin;
+  margin-top: 60px;
+}
+#remove {
+  margin-top: 40px;
+  margin-left: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+#add {
+  margin-top: 50px;
+  margin-left: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+#button {
+  border-radius: 50px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+#input-cliente {
+  border-radius: 70px;
+  font-weight: 900;
+  max-width: 30%;
+  font-size: 2, 5vmin;
+  margin-top: 5px;
+  margin-left: 8px;
+}
+#tabela-cliente {
+  font-weight: 400;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
